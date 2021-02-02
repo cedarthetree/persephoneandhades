@@ -1,0 +1,54 @@
+body {
+	background-image: url('bg1.png') ;
+}
+
+.persephone1 {
+	left: 550px;
+	top: 100px;
+	bottom: 0px;
+	right: 0px;
+	position: fixed;
+}
+
+.one {
+	background: url('bg1.png') ;
+}
+
+.two {
+	background: url('bg1.png') ;
+}
+
+.three {
+	background: url('bg1.png') ;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 1300vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
