@@ -8,9 +8,58 @@ body.demeter {
   animation-duration: 4s;
 }
 
+body.tree {
+  background-image: url('bg4.png');
+  width: 1450px;
+  height: 700px;
+}
+
 @keyframes winter {
-  from {background-image: url('bg1.png');}
-  to {background-image: url('bg3.png');}
+  0% {background-image: url('bg1.png');}
+  25% {background-image: url('bg1.png');}
+  100% {background-image: url('bg3.png');}
+}
+
+.demeter1 {
+  left: 150px;
+  top: 100px;
+  position: absolute;
+}
+
+.flowers1 {
+  position: absolute;
+  left: 150px;
+  top: 100px;
+}
+
+.flowers2 {
+  position: absolute;
+  left: 150px;
+  top: 100px;
+  opacity: 0%;
+  animation-name: flowers;
+  animation-duration: 4s;
+}
+
+@keyframes flowers {
+  0% {opacity: 100%;}
+  25% {opacity: 100%;}
+  100% {opacity: 0%;}
+}
+
+.arrow {
+  position: absolute;
+  left: 1200px;
+  top: 600px;
+  opacity: 100%;
+  animation-name: arrow;
+  animation-duration: 4s;
+}
+
+@keyframes arrow {
+  0% {opacity: 0%;}
+  75% {opacity: 0%;}
+  100% {opacity: 100%;}
 }
 
 .persephone1 {
@@ -19,6 +68,125 @@ body.demeter {
 	bottom: 0px;
 	right: 0px;
 	position: fixed;
+}
+
+.background {
+  position: absolute;
+  width: 1450px;
+  height: 700px;
+  background-color: #140202;
+  opacity: 100%;
+  animation-name: pomegranateone;
+  animation-duration: 12s;
+}
+
+@keyframes pomegranateone {
+  0% {opacity: 0%;}
+  33% {opacity: 0%;}
+  66% {opacity: 100%;}
+}
+
+.pomegranate {
+  position: absolute;
+  left: 350px;
+  top: 30px;
+}
+
+.seed {
+  position: absolute;
+  left: 350px;
+  top: 30px;
+}
+
+.a {
+  animation-name: seeda;
+  animation-duration: 12s;
+}
+
+@keyframes seeda {
+  66% {opacity: 0%;}
+  70% {opacity: 100%;}
+}
+
+@keyframes seedb {
+  70% {opacity: 0%;}
+  74% {opacity: 100%;}
+}
+
+@keyframes seedc {
+  74% {opacity: 0%;}
+  78% {opacity: 100%;}
+}
+
+@keyframes seedd {
+  78% {opacity: 0%;}
+  82% {opacity: 100%;}
+}
+
+@keyframes seede {
+  82% {opacity: 0%;}
+  86% {opacity: 100%;}
+}
+
+@keyframes seedf {
+  86% {opacity: 0%;}
+  90% {opacity: 100%;}
+}
+
+@keyframes arrowtwo {
+  0% {opacity: 0%;}
+  90% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
+.arrow2 {
+  position: absolute;
+  left: 1200px;
+  top: 600px;
+  opacity: 100%;
+  animation-name: arrowtwo;
+  animation-duration: 12s;
+}
+
+.b {
+  animation-name: seedb;
+  animation-duration: 12s;
+}
+
+.c {
+  animation-name: seedc;
+  animation-duration: 12s;
+}
+
+.d {
+  animation-name: seedd;
+  animation-duration: 12s;
+}
+
+.e {
+  animation-name: seede;
+  animation-duration: 12s;
+}
+
+.f {
+  animation-name: seedf;
+  animation-duration: 12s;
+}
+
+.persephone3 {
+  position: absolute;
+  transform: scaleX(-1);
+  left: 900px;
+  top: 200px;
+  animation-name: tree;
+  animation-duration: 12s;
+}
+
+@keyframes tree {
+  0% {left: 1500px;
+      top: 400px;}
+  33% {left: 900px;
+        top: 200px;}
 }
 
 .sun {
