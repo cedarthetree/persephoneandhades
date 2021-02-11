@@ -16,7 +16,7 @@ body.tree {
 
 @keyframes winter {
   0% {background-image: url('bg1.png');}
-  55% {background-image: url('bg1.png');}
+  50% {background-image: url('bg1.png');}
   100% {background-image: url('bg3.png');}
 }
 
@@ -43,7 +43,7 @@ body.tree {
 
 @keyframes flowers {
   0% {opacity: 100%;}
-  55% {opacity: 100%;}
+  50% {opacity: 100%;}
   100% {opacity: 0%;}
 }
 
