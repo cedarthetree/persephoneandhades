@@ -5,7 +5,7 @@ body.vertical {
 body.demeter {
   background-image: url('bg3.png');
   animation-name: winter;
-  animation-duration: 4s;
+  animation-duration: 6s;
 }
 
 body.tree {
@@ -16,7 +16,7 @@ body.tree {
 
 @keyframes winter {
   0% {background-image: url('bg1.png');}
-  25% {background-image: url('bg1.png');}
+  55% {background-image: url('bg1.png');}
   100% {background-image: url('bg3.png');}
 }
 
@@ -38,12 +38,12 @@ body.tree {
   top: 100px;
   opacity: 0%;
   animation-name: flowers;
-  animation-duration: 4s;
+  animation-duration: 6s;
 }
 
 @keyframes flowers {
   0% {opacity: 100%;}
-  25% {opacity: 100%;}
+  55% {opacity: 100%;}
   100% {opacity: 0%;}
 }
 
