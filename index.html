@@ -20,7 +20,14 @@
     <script src="js/jquery.waypoints.min.js"></script>
 
     <script>
-      $(".two").waypoint(
+      $(".one").waypoint(
+        function () {
+          $(".first").attr("src", "persephone1.png")
+        },
+        { offset: "50%", horizontal: true }
+      )
+
+      $(".three").waypoint(
         function () {
           $(".first").attr("src", "persephone2.png")
         },
