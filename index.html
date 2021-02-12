@@ -1,40 +1,31 @@
-<!DOCTYPE HTML>
-<html lang = "en">
-<head>
-  <!-- basic.html -->
-  <title>persephone and hades</title>
-  <link rel="stylesheet" href="style.css">
-  <meta charset = "UTF-8" />
-</head>
-	<body>
-		<main>
- 		<div class="outer-wrapper">
- 			<div class="wrapper">
- 				<section class="slide one">
- 				</section>
- 				<section class="slide two">
- 				</section>
- 				<section class="slide three">
- 				</section>
-			</div>
-		</div>
-			<section>
-				<div class="persephone1">
- 					<img class="first" src="persephone1.png">
- 				</div>
- 			</section>
- 		</main>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic.html -->
+    <title>persephone and hades</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div class="persephone1">
+      <img class="first" src="persephone1.png" />
+    </div>
+    <div class="wrapper">
+      <section class="slide one"></section>
+      <section class="slide two"></section>
+      <section class="slide three"></section>
+    </div>
 
- 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/jquery.waypoints.min.js"></script>
 
     <script>
-      $('.two').waypoint(
+      $(".two").waypoint(
         function () {
-          $('.first').attr('src', 'persephone2.png')
+          $(".first").attr("src", "persephone2.png")
         },
-        { offset: '50%', horizontal: true })
-      
+        { offset: "50%", horizontal: true }
+      )
     </script>
-</body>
+  </body>
 </html>
