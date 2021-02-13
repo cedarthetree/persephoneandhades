@@ -14,6 +14,30 @@ body.tree {
   height: 700px;
 }
 
+body.final {
+  background-image: url("bg5.png");
+}
+
+.persephone4 {
+  position: fixed;
+  top: 100px;
+  left: 530px;
+  animation-name: last;
+  animation-duration: 6s;
+}
+
+@keyframes last {
+  0% {
+    top: -600px;
+  }
+  25% {
+    top: -600px;
+  }
+  100% {
+    top: 100px;
+  }
+}
+
 @keyframes winter {
   0% {
     background-image: url("bg1.png");
@@ -95,7 +119,21 @@ body.tree {
   left: 550px;
   transition: transform 2s;
 }
+
 .persephone1 .first {
+}
+
+.secondarrow {
+  position: absolute;
+  left: 1220px;
+  top: 20px;
+}
+
+.arrow3 {
+  position: absolute;
+  left: 4080px;
+  top: 350px;
+  opacity: 100%;
 }
 
 .background {
@@ -259,8 +297,8 @@ body.tree {
 
 .sun {
   position: absolute;
-  left: 1300px;
-  top: 1700px;
+  left: 1255px;
+  top: 1650px;
 }
 
 .one {
