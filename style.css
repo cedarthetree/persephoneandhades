@@ -1,116 +1,4 @@
-body.vertical {
-  background-image: url("bg2.png");
-}
-
-body.demeter {
-  background-image: url("bg3.png");
-  animation-name: winter;
-  animation-duration: 6s;
-}
-
-body.tree {
-  background-image: url("bg4.png");
-  width: 1450px;
-  height: 700px;
-}
-
-body.final {
-  background-image: url("bg5.png");
-}
-
-.persephone4 {
-  position: fixed;
-  top: 100px;
-  left: 530px;
-  animation-name: last;
-  animation-duration: 6s;
-}
-
-@keyframes last {
-  0% {
-    top: -600px;
-  }
-  25% {
-    top: -600px;
-  }
-  100% {
-    top: 100px;
-  }
-}
-
-@keyframes winter {
-  0% {
-    background-image: url("bg1.png");
-  }
-  50% {
-    background-image: url("bg1.png");
-  }
-  100% {
-    background-image: url("bg3.png");
-  }
-}
-
-.demeter1 {
-  left: 150px;
-  top: 100px;
-  position: absolute;
-}
-
-.flowers1 {
-  position: absolute;
-  left: 150px;
-  top: 100px;
-}
-
-.flowers2 {
-  position: absolute;
-  left: 150px;
-  top: 100px;
-  opacity: 0%;
-  animation-name: flowers;
-  animation-duration: 6s;
-}
-
-@keyframes flowers {
-  0% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
-  }
-}
-
-.arrow {
-  position: absolute;
-  left: 1200px;
-  top: 600px;
-  opacity: 100%;
-  animation-name: arrow;
-  animation-duration: 4s;
-}
-
-@keyframes arrow {
-  0% {
-    opacity: 0%;
-  }
-  75% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-/*
-.persephone1 {
-  left: 550px;
-  top: 100px;
-  bottom: 0px;
-  right: 0px;
-  position: fixed;
-} */
+/* index */
 
 .persephone1 {
   z-index: 1;
@@ -136,6 +24,230 @@ body.final {
   opacity: 100%;
 }
 
+.one {
+  background: url("bg1.png");
+}
+
+.two {
+  background: url("bg1.png");
+}
+
+.three {
+  background: url("bg1.png");
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+}
+
+.wrapper section {
+  width: 100vw;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 300vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* one */
+
+body.vertical {
+  background-image: url("bg2.png");
+}
+
+.land {
+  left: 1300px;
+  top: 250px;
+  position: absolute;
+  animation-name: landslide;
+  animation-duration: 4s;
+}
+
+.persephone2 {
+  left: 800px;
+  top: 2000px;
+  bottom: 0px;
+  right: 0px;
+  position: fixed;
+  animation-name: persephone1;
+  animation-duration: 6s;
+}
+
+.hades1 {
+  top: 1800px;
+  left: 1000px;
+  position: absolute;
+  animation-name: hades;
+  animation-duration: 6s;
+  opacity: 0%;
+}
+
+.sun {
+  position: absolute;
+  left: 1255px;
+  top: 1650px;
+}
+
+@keyframes landslide {
+  from {
+    left: 950px;
+  }
+  to {
+    left: 1300px;
+  }
+}
+
+@keyframes hades {
+  0% {
+    top: 1000px;
+    left: 900px;
+    opacity: 100%;
+  }
+  50% {
+    top: 230px;
+    left: 900px;
+    opacity: 100%;
+  }
+  67% {
+    top: 230px;
+    left: 700px;
+    opacity: 100%;
+  }
+  82% {
+    top: 230px;
+    left: 1000px;
+    opacity: 100%;
+  }
+  100% {
+    top: 5000px;
+    left: 1000px;
+    opacity: 100%;
+  }
+}
+
+@keyframes persephone1 {
+  0% {
+    top: 100px;
+    left: 550px;
+  }
+  67% {
+    top: 100px;
+    left: 550px;
+  }
+  82% {
+    top: 100px;
+    left: 800px;
+  }
+  100% {
+    top: 5000px;
+    left: 800px;
+  }
+}
+
+/* two */
+
+body.demeter {
+  background-image: url("bg3.png");
+  animation-name: winter;
+  animation-duration: 6s;
+}
+
+.demeter1 {
+  left: 150px;
+  top: 100px;
+  position: absolute;
+}
+
+.flowers1 {
+  position: absolute;
+  left: 150px;
+  top: 100px;
+}
+
+.flowers2 {
+  position: absolute;
+  left: 150px;
+  top: 100px;
+  opacity: 0%;
+  animation-name: flowers;
+  animation-duration: 6s;
+}
+
+.arrow {
+  position: absolute;
+  left: 1200px;
+  top: 600px;
+  opacity: 100%;
+  animation-name: arrow;
+  animation-duration: 4s;
+}
+
+@keyframes winter {
+  0% {
+    background-image: url("bg1.png");
+  }
+  50% {
+    background-image: url("bg1.png");
+  }
+  100% {
+    background-image: url("bg3.png");
+  }
+}
+
+@keyframes flowers {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* three */
+
+body.tree {
+  background-image: url("bg4.png");
+  width: 1450px;
+  height: 700px;
+}
+
+.persephone3 {
+  position: absolute;
+  transform: scaleX(-1);
+  left: 900px;
+  top: 200px;
+  animation-name: tree;
+  animation-duration: 12s;
+}
+
 .background {
   position: absolute;
   width: 1450px;
@@ -144,18 +256,6 @@ body.final {
   opacity: 100%;
   animation-name: pomegranateone;
   animation-duration: 12s;
-}
-
-@keyframes pomegranateone {
-  0% {
-    opacity: 0%;
-  }
-  33% {
-    opacity: 0%;
-  }
-  66% {
-    opacity: 100%;
-  }
 }
 
 .pomegranate {
@@ -173,6 +273,63 @@ body.final {
 .a {
   animation-name: seeda;
   animation-duration: 12s;
+}
+
+.b {
+  animation-name: seedb;
+  animation-duration: 12s;
+}
+
+.c {
+  animation-name: seedc;
+  animation-duration: 12s;
+}
+
+.d {
+  animation-name: seedd;
+  animation-duration: 12s;
+}
+
+.e {
+  animation-name: seede;
+  animation-duration: 12s;
+}
+
+.f {
+  animation-name: seedf;
+  animation-duration: 12s;
+}
+
+.arrow2 {
+  position: absolute;
+  left: 1200px;
+  top: 600px;
+  opacity: 100%;
+  animation-name: arrowtwo;
+  animation-duration: 12s;
+}
+
+@keyframes tree {
+  0% {
+    left: 1500px;
+    top: 400px;
+  }
+  33% {
+    left: 900px;
+    top: 200px;
+  }
+}
+
+@keyframes pomegranateone {
+  0% {
+    opacity: 0%;
+  }
+  33% {
+    opacity: 0%;
+  }
+  66% {
+    opacity: 100%;
+  }
 }
 
 @keyframes seeda {
@@ -241,183 +398,28 @@ body.final {
   }
 }
 
-.arrow2 {
-  position: absolute;
-  left: 1200px;
-  top: 600px;
-  opacity: 100%;
-  animation-name: arrowtwo;
-  animation-duration: 12s;
+/* four */
+
+body.final {
+  background-image: url("bg5.png");
 }
 
-.b {
-  animation-name: seedb;
-  animation-duration: 12s;
-}
-
-.c {
-  animation-name: seedc;
-  animation-duration: 12s;
-}
-
-.d {
-  animation-name: seedd;
-  animation-duration: 12s;
-}
-
-.e {
-  animation-name: seede;
-  animation-duration: 12s;
-}
-
-.f {
-  animation-name: seedf;
-  animation-duration: 12s;
-}
-
-.persephone3 {
-  position: absolute;
-  transform: scaleX(-1);
-  left: 900px;
-  top: 200px;
-  animation-name: tree;
-  animation-duration: 12s;
-}
-
-@keyframes tree {
-  0% {
-    left: 1500px;
-    top: 400px;
-  }
-  33% {
-    left: 900px;
-    top: 200px;
-  }
-}
-
-.sun {
-  position: absolute;
-  left: 1255px;
-  top: 1650px;
-}
-
-.one {
-  background: url("bg1.png");
-}
-
-.two {
-  background: url("bg1.png");
-}
-
-.three {
-  background: url("bg1.png");
-}
-
-.slide {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background-size: cover;
-}
-
-.wrapper section {
-  width: 100vw;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  width: 300vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-::-webkit-scrollbar {
-  display: none;
-}
-
-.land {
-  left: 1300px;
-  top: 250px;
-  position: absolute;
-  animation-name: landslide;
-  animation-duration: 4s;
-}
-
-.hades1 {
-  top: 1800px;
-  left: 1000px;
-  position: absolute;
-  animation-name: hades;
-  animation-duration: 6s;
-  opacity: 0%;
-}
-
-.persephone2 {
-  left: 800px;
-  top: 2000px;
-  bottom: 0px;
-  right: 0px;
+.persephone4 {
   position: fixed;
-  animation-name: persephone1;
+  top: 100px;
+  left: 530px;
+  animation-name: last;
   animation-duration: 6s;
 }
 
-@keyframes landslide {
-  from {
-    left: 950px;
-  }
-  to {
-    left: 1300px;
-  }
-}
-
-@keyframes hades {
+@keyframes last {
   0% {
-    top: 1000px;
-    left: 900px;
-    opacity: 100%;
+    top: -600px;
   }
-  50% {
-    top: 230px;
-    left: 900px;
-    opacity: 100%;
-  }
-  67% {
-    top: 230px;
-    left: 700px;
-    opacity: 100%;
-  }
-  82% {
-    top: 230px;
-    left: 1000px;
-    opacity: 100%;
+  25% {
+    top: -600px;
   }
   100% {
-    top: 5000px;
-    left: 1000px;
-    opacity: 100%;
-  }
-}
-
-@keyframes persephone1 {
-  0% {
     top: 100px;
-    left: 550px;
-  }
-  67% {
-    top: 100px;
-    left: 550px;
-  }
-  82% {
-    top: 100px;
-    left: 800px;
-  }
-  100% {
-    top: 5000px;
-    left: 800px;
   }
 }
